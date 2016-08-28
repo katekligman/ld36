@@ -1,0 +1,25 @@
+*comment Scene 2:  Neighbors House
+*comment Premise: Enlist your neighbor’s help to print document
+*comment Next: Enter through the front door
+*comment A. Hand neighbor floppies (Comes back telling you your grammar is horrible and you need to edit your paper)
+*comment B. Try to climb in through window (Dad wakes up, you run back to your house before you can get caught)
+*comment C. Enter through the front door (You burn down the house by accidentally crossing the streams)
+
+You have no time figure out how to get the power back on. Luckily you manage to catch your neighbor's attention. Those creepy bedroom windows that face each other can actually be useful I guess.
+The neighbor's parents really don't like you. Luckily they are asleep.
+*label retry
+*choice
+  #Open your windows and toss the floppy drives over to your neighbor.
+    *set time +1
+    After a couple of minutes, you see a paper airplane drift in. Your grammar sucks and you need to edit your paper. Your neighbor tosses the floppies back to you.
+    *goto retry
+
+  #There's a tree outside your neighbor's window. You try to get in by climbing it.
+    *set time +1
+    A branch breaks and the dad awakes. You run back into your house before you can get caught.
+    *goto retry
+
+  #You tell your neighbor to open the door so you can use their printer.
+    *set time +1
+    You burn down their house by accidentally crossing the streams.
+    *finish
