@@ -2,3 +2,4 @@ disk-1.png : http://opengameart.org/content/floppy-disk
 firepunch_alpha.gif : http://opengameart.org/content/fire-punch
 wizard.png : http://opengameart.org/content/wizard-portrait-talking-happy-angry-with-and-without-wizard-clothes
 Printer.png : http://opengameart.org/content/office-supplies
+cat.jpg : http://opengameart.org/content/cat
