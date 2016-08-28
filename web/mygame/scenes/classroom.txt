@@ -1,0 +1,27 @@
+*page_break
+
+*if time < deadline
+    Classroom: You arrive ${deadline - time} hours early to class! The future looks bright.
+    *gosub decision
+*elseif time > deadline
+    Classroom: You arrive dishoveled and exhausted, ${time - deadline} hours late for class.
+    *gosub decision
+*elseif time = deadline
+    Classroom: You arrive a little exhausted but just in the nick of time! Looks like this day's going to work out after all!
+    *gosub decision
+
+*label decision
+You see your teacher in the classroom.  What do you do?
+*choice
+    #Submit your paper!
+        You hand in your charred, hard-won, soggy paper. Your teacher takes one look at your paper and says you could have just sent me an email.
+
+        Game over
+        *finish
+
+    #You're scared of your teacher's criticism. Go back to the past and try again!
+        You start blabbering some pagan language incantation to transport you back to the beginning of the day.
+        *goto_scene startup
+    #You're sick of living in the 1980s.  Go back to the future!
+        As you start blabbering an incantation to transport you to a time with USBs, but you realize you love these ancient times too much and stop.
+        *goto decision
