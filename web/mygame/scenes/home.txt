@@ -15,11 +15,13 @@ Twirling your 1980's mustache, you place the floppy disk in the drive, and you h
         *gosub fixcomputer
     *hide_reuse #Try to print anyways
         *set home_count +1
+        You inspect your dot matrix printer and discover the ink ribbon is almost completely shredded. Your cat gives you a guilty look as it shuffles out of the room, trailing little grey paw prints on your carpet.
         *gosub fixcomputer
     *hide_reuse #Turn the computer off and turn it back on
-        On and off
+        Trumpets sound as you press the on/off switch with purpose. A whiff of smoke emits from your computer.
         *set home_count +1
         *gosub fixcomputer
     *if home_count = 3
-        #Ask your neighbor for help
-            You go next door...
+        #Consider your life choices that lead you to print a document this important at the last minute.
+            You think about all of the partying, slacking, and 1980's movie watching that brought you to this moment in time. You deicde to pop some popcorn, but the power in your house flickers, then goes out. Perhaps your neighbor has a printer you can borrow...
+            *finish
