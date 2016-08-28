@@ -1,0 +1,14 @@
+*title My Cat Ate My Floppy Drive
+*author Raymond Chung, Kate Kligman, Michael Liu
+*scene_list
+    startup
+    home
+    neighbors
+    transit
+    computerlab
+    classroom
+
+*create time 0
+
+
+This is a placeholder
