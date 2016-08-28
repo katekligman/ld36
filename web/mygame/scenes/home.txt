@@ -12,16 +12,20 @@ Twirling your 1980's mustache, you place the floppy disk in the drive, and you h
     *hide_reuse #Try to fix the floppy drive
         Putting on your best Fix-It hat, you reluctantly eject your term paper disk and try to stick your pencil into the drive. With a pull on a cable the drive cartwheels across the table and falls to the floor scattering shardes of plastic and metal everywhere.
         *set home_count +1
+        *set time +1
         *gosub fixcomputer
     *hide_reuse #Try to print anyways
         *set home_count +1
+        *set time +1
         You inspect your dot matrix printer and discover the ink ribbon is almost completely shredded. Your cat gives you a guilty look as it shuffles out of the room, trailing little grey paw prints on your carpet.
         *gosub fixcomputer
     *hide_reuse #Turn the computer off and turn it back on
         Trumpets sound as you press the on/off switch with purpose. A whiff of smoke emits from your computer.
         *set home_count +1
+        *set time +1
         *gosub fixcomputer
     *if home_count = 3
         #Consider your life choices that lead you to print a document this important at the last minute.
             You think about all of the partying, slacking, and 1980's movie watching that brought you to this moment in time. You deicde to pop some popcorn, but the power in your house flickers, then goes out. Perhaps your neighbor has a printer you can borrow...
+            *set time +1
             *finish
