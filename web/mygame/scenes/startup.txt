@@ -9,6 +9,4 @@
     classroom
 
 *create time 0
-
-
-This is a placeholder
+*create home_count 0
