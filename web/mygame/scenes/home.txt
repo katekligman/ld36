@@ -1,0 +1,25 @@
+
+It's the last day of the final semester of your four year quest to finish your college degree. You've spent all of your student loan money on a brand new Commodore 64 and you're confident the final term paper you're about to print will have made it all worthwhile.
+
+*page_break
+
+Twirling your 1980's mustache, you place the floppy disk in the drive, and you hear a strangely ominous sound followed by a crack.
+
+*page_break
+
+*label fixcomputer
+*choice
+    *hide_reuse #Try to fix the floppy drive
+        Putting on your best Fix-It hat, you reluctantly eject your term paper disk and try to stick your pencil into the drive. With a pull on a cable the drive cartwheels across the table and falls to the floor scattering shardes of plastic and metal everywhere.
+        *set home_count +1
+        *gosub fixcomputer
+    *hide_reuse #Try to print anyways
+        *set home_count +1
+        *gosub fixcomputer
+    *hide_reuse #Turn the computer off and turn it back on
+        On and off
+        *set home_count +1
+        *gosub fixcomputer
+    *if home_count = 3
+        #Ask your neighbor for help
+            You go next door...

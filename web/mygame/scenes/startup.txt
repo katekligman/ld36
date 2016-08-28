@@ -12,5 +12,4 @@
 
 *create deadline 5
 
-
-This is a placeholder
+*create home_count 0
