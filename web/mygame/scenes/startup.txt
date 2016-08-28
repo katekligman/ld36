@@ -8,7 +8,7 @@
     computerlab
     classroom
 
-*create time
+*create time 0
 
 
 This is a placeholder
