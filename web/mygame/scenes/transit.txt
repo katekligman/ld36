@@ -1,0 +1,37 @@
+*comment Scene 3:  Transit to Computer Lab
+*comment Premise: You need to get to the computer lab as fast as possible
+*comment Next: Call an Uber
+*comment A. Drive (Left ignition key in neighbor’s burnt down house)
+*comment B. Bus (Bus doesn’t run this late)
+*comment C. Bike (You don’t have bike)
+*comment D. Hitchhike (Nobody around)
+*comment E. Call an Uber (Path forward)
+
+With your own printer and the neighbor's printer out of commission your last hope is get the paper printed at the computer lab back at school.
+But how are you going to get there?
+*label retry
+*choice
+  #Drive
+    *set time +1
+    You open your car door, but then realize that you left the ignition key in your neighbor’s room. Probably not a good idea to go back for it.
+    *goto retry
+
+  #Take the Bus
+    *set time +1
+    The bus doesn't run this late. You wasted some time walking to and from the bus stop.
+    *goto retry
+
+  #Bike
+    *set time +1
+    You don't even have a bike. Who the heck bikes?
+    *goto retry
+
+  #Hitchhike
+    *set time +1
+    Nobody's around.
+    *goto retry
+
+  #Call an Uber
+    *set time +1
+    Luckily you installed the Uber application on your Motorola DynaTAC.
+    *finish
