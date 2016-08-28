@@ -1,0 +1,30 @@
+*comment Scene 4: Computer Lab
+*comment Premise: Pick a computer and print the paper.
+*comment Next: Any
+*comment A. Fire alarm (Normal ending)
+*comment B. Bribe the lab tech (Good ending)
+*comment C. Use the computer in the corner that's dark (Bad ending).
+*comment D. Push someone off a computer. (Normal ending)
+
+You manage to get to the computer lab, but it's crammed with other desperate graduate students trying to finish their papers.
+What do you do?
+*choice
+  #Full the fire alarm
+    *set time +1
+    Everyone runs out of the computer lab and you're able to print your paper in peace.
+    *finish
+
+  #Bribe the lab tech
+    *set time +0
+    It turns out there's a computer and printer in the teacher's lounge, and you even get to put your paper directly into your professor's mailbox!
+    *finish
+
+  #Use the computer in the computer that looks like it might be broken
+    *set time +2
+    The computer had a virus that corrupts your floppy disk and you spend the rest of the night trying to recover it.
+    *finish
+
+  #Push someone off of a computer. Your paper matters more!
+    *set time +1
+    You get in an argument, but by the time the lab tech comes to break it up the paper is already printing. You give the computer back and get your paper.
+    *finish
